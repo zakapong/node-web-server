@@ -57,6 +57,15 @@ app.get('/about', (req, res)=>{
 });
 
 
+app.get('/notfound', (req, res)=>{
+  //res.send('About Page');
+  res.render('notfound.hbs',{
+    pageTitle:'No Page oh no!'
+
+  });
+});
+
+
 app.get('/', (req, res)=>{
   //res.send('About Page');
   res.render('home.hbs',{
